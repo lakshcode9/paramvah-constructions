@@ -14,12 +14,12 @@ const bebas = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Paramvah Constructions | Building the Future of Mangalore",
   description: "Paramvah Constructions delivers premier residential and commercial projects with precision, safety, and operational excellence in Mangalore, Karnataka.",
-  keywords: ["Construction Mangalore", "General Construction", "Interior Fit-Out", "Real Estate Mangalore", "Paramvah", "Civil Engineering"],
+  keywords: ["Construction Mangalore", "General Construction", "Interior Fit-Out", "Real Estate Mangalore", "Paramvah", "Paramvah Constructions", "Civil Engineering"],
   authors: [{ name: "Samvith Nair" }],
   openGraph: {
     title: "Paramvah Constructions | Building with Integrity",
     description: "Premier construction excellence in Mangalore. We don't just build, we create solutions.",
-    url: "https://paramvahconstruction.com",
+    url: "https://paramvahconstructions.com",
     siteName: "Paramvah Constructions",
     locale: "en_US",
     type: "website",
