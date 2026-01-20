@@ -12,8 +12,18 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Paramvah Construction",
-  description: "Building the Future, One Foundation at a Time. Premier construction company in Mangalore.",
+  title: "Paramvah Construction | Building the Future of Mangalore",
+  description: "Paramvah Construction delivers premier residential and commercial projects with precision, safety, and operational excellence in Mangalore, Karnataka.",
+  keywords: ["Construction Mangalore", "General Construction", "Interior Fit-Out", "Real Estate Mangalore", "Paramvah", "Civil Engineering"],
+  authors: [{ name: "Samvith Nair" }],
+  openGraph: {
+    title: "Paramvah Construction | Building with Integrity",
+    description: "Premier construction excellence in Mangalore. We don't just build, we create solutions.",
+    url: "https://paramvah.com",
+    siteName: "Paramvah Construction",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
