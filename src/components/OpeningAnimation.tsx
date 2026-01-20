@@ -59,9 +59,9 @@ export default function OpeningAnimation() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-primary font-bold tracking-[0.5em] text-sm mt-2 uppercase"
+              className="text-primary font-bold tracking-[0.3em] text-sm mt-4 uppercase text-center"
             >
-              Construction
+              We construct your dreams
             </motion.p>
           </motion.div>
         </motion.div>

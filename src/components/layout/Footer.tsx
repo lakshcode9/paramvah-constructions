@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="relative group overflow-hidden rounded-2xl mb-8 aspect-square md:aspect-[4/5] max-w-[180px]">
               <Image 
                 src="/founder.jpg" 
-                alt="Founder of Paramvah Construction" 
+                alt="Founder of Paramvah Constructions"  
                 fill 
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
               />
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 md:pt-12 border-t border-border/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-bold">
-          <p className="text-center md:text-left">© 2026 Paramvah Construction . All Rights Reserved.</p>
+          <p className="text-center md:text-left">© 2026 Paramvah Constructions . All Rights Reserved.</p>
           <div className="flex gap-8">
             <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>

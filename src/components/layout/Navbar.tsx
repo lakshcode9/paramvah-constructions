@@ -40,7 +40,7 @@ export default function Navbar() {
            <div className="relative w-12 h-12">
              <Image 
               src="/logo-bg-removed.png" 
-              alt="Paramvah Construction" 
+              alt="Paramvah Constructions"  
               fill
               className="object-contain dark:invert dark:filter"
              />
@@ -50,7 +50,7 @@ export default function Navbar() {
                PARAMVAH
              </span>
              <span className="text-[0.7rem] uppercase tracking-[0.3em] text-primary/80 font-bold">
-               Construction
+               Constructions
              </span>
            </div>
         </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
               <SheetHeader className="text-left">
                 <SheetTitle className="text-2xl font-black uppercase tracking-widest text-primary">Menu</SheetTitle>
                 <SheetDescription className="sr-only">
-                  Navigate through Paramvah Construction's services and projects.
+                  Navigate through Paramvah Constructions's services and projects.
                 </SheetDescription>
               </SheetHeader>
               <div className="mt-10 flex flex-col gap-6">

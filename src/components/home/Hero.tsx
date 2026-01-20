@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="hidden md:block w-full h-full relative">
             <Image
                 src="/HERO_COMPUTER_STATIC.png"
-                alt="Paramvah Construction Site"
+                alt="Paramvah Constructions Site"
                 fill
                 className="object-cover"
                 priority
@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="block md:hidden w-full h-full relative">
              <Image
                 src="/HERO_MOBILE_STATIC.png"
-                alt="Paramvah Construction Site"
+                alt="Paramvah Constructions Site"
                 fill
                 className="object-cover"
                 priority
