@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+/* standard tailwind v4 plugins */
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+    /* LIGHT MODE: User requested Teal #5B9B8A Background, Black Text */
+    /* #5B9B8A -> HSL 164 26% 48% */
+    
+    /* Background: Teal */
+    --background: 164 26% 48%; 
+    
+    /* Foreground: Black */
+    --foreground: 0 0% 0%; 
+
+    --card: 164 26% 48%;
+    --card-foreground: 0 0% 0%;
+ 
+    --popover: 164 26% 48%;
+    --popover-foreground: 0 0% 0%;
+ 
+    /* Primary: Black (to contrast with Teal BG) */
+    --primary: 0 0% 0%; 
+    --primary-foreground: 164 26% 48%;
+ 
+    --secondary: 164 26% 40%;
+    --secondary-foreground: 0 0% 0%;
+ 
+    --muted: 164 26% 40%;
+    --muted-foreground: 0 0% 20%;
+ 
+    --accent: 0 0% 0%;
+    --accent-foreground: 164 26% 48%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+ 
+    --radius: 0rem; 
+    
+    /* Font Variables - Bebas Neue */
+    --font-heading: var(--font-bebas), sans-serif;
+    --font-body: var(--font-bebas), sans-serif;
+  }
+
+  .dark {
+    /* DARK MODE: Black BG, Teal #5B9B8A Text */
+    
+    /* Background: Black */
+    --background: 0 0% 0%;
+    
+    /* Foreground: Teal */
+    --foreground: 164 26% 48%;
+ 
+    --card: 0 0% 5%;
+    --card-foreground: 164 26% 48%;
+ 
+    --popover: 0 0% 5%;
+    --popover-foreground: 164 26% 48%;
+ 
+    /* Primary: Teal */
+    --primary: 164 26% 48%;
+    --primary-foreground: 0 0% 0%;
+ 
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 164 26% 48%;
+ 
+    --muted: 0 0% 15%;
+    --muted-foreground: 164 26% 48%;
+ 
+    --accent: 164 26% 48%;
+    --accent-foreground: 0 0% 0%;
+ 
+    --border: 164 26% 20%;
+    --input: 164 26% 20%;
+    --ring: 164 26% 48%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+    outline-color: hsl(var(--ring) / 0.5);
+  }
+  /* Force custom cursor on body */
+  html, body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    cursor: url('/cursor-default.png'), auto !important;
+  }
+
+  /* Force custom pointer on interactive elements, overriding Tailwind's .cursor-pointer */
+  a, button, [role='button'], input, textarea, select, .cursor-pointer,
+  a:hover, button:hover, [role='button']:hover, input:hover, textarea:hover, select:hover, .cursor-pointer:hover {
+    cursor: url('/cursor-pointer.png'), pointer !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
