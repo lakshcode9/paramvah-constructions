@@ -12,7 +12,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="py-20 container mx-auto px-6">
         <h1 className="text-5xl md:text-7xl font-black text-[#030C1D] mb-6 uppercase tracking-tighter">
-          About <span className="text-primary">ParamVah</span>
+          About <span className="text-primary">Paramvah</span>
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl font-light leading-relaxed">
           Rooted in Mangalore, built on the pillars of integrity and precision. We are more than a construction company; we are partners in building your legacy.
@@ -37,7 +37,7 @@ export default function AboutPage() {
              <h2 className="text-5xl md:text-7xl font-black text-foreground uppercase tracking-tight mb-8">Samvith Nair</h2>
              <div className="space-y-6 text-gray-300 font-light leading-relaxed">
                <p>
-                 "Construction is not just about concrete and steel; it's about promises kept and dreams realized. At ParamVah, we believe in a disciplined, no-nonsense approach to building."
+                 "Construction is not just about concrete and steel; it's about promises kept and dreams realized. At Paramvah, we believe in a disciplined, no-nonsense approach to building."
                </p>
                <p>
                  "Our mission is simple: To deliver structures that stand the test of time, both in durability and design. We are committed to the long-term growth of Mangalore and Karnataka."
