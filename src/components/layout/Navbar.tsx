@@ -45,14 +45,17 @@ export default function Navbar() {
               className="object-contain dark:invert dark:filter"
              />
            </div>
-           <div className="flex flex-col">
-             <span className="text-2xl font-bold tracking-widest text-foreground leading-none">
-               PARAMVAH
-             </span>
-             <span className="text-[0.7rem] uppercase tracking-[0.3em] text-primary/80 font-bold">
-               Constructions
-             </span>
-           </div>
+             <div className="flex flex-col justify-center">
+               <span className="text-2xl font-bold tracking-widest text-foreground leading-none">
+                 PARAMVAH
+               </span>
+               <span className="text-[0.7rem] uppercase tracking-[0.3em] text-primary/80 font-bold leading-tight">
+                 Constructions
+               </span>
+               <span className="text-[0.45rem] uppercase tracking-[0.1em] text-primary/60 font-medium whitespace-nowrap leading-tight mt-[1px]">
+                 We construct your dreams
+               </span>
+             </div>
         </Link>
 
         {/* Desktop Menu */}

@@ -55,11 +55,11 @@ export default function OpeningAnimation() {
             >
               PARAMVAH
             </motion.h1>
-             <motion.p
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-primary font-bold tracking-[0.3em] text-sm mt-4 uppercase text-center"
+              className="text-primary/80 font-medium tracking-[0.2em] text-[0.6rem] md:text-xs mt-2 uppercase text-center"
             >
               We construct your dreams
             </motion.p>

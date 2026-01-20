@@ -47,7 +47,7 @@ export default function Preloader() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              className="text-white text-lg md:text-2xl font-light tracking-[0.4em] uppercase text-center"
+              className="text-primary font-bold tracking-[0.25em] text-xs md:text-sm uppercase text-center mt-2"
             >
               We construct your dreams
             </motion.p>
