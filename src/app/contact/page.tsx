@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -5,9 +7,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function ContactPage() {
+function ContactFormContent() {
+  const searchParams = useSearchParams();
+  const success = searchParams.get("success");
+
   return (
     <main className="min-h-screen bg-background text-foreground pt-20">
       <Navbar />
@@ -62,12 +69,28 @@ export default function ContactPage() {
           </div>
 
           {/* Form Side */}
-          <div className="bg-white/5 p-8 md:p-12 border border-border/10 rounded-2xl">
+          <div className="bg-white/5 p-8 md:p-12 border border-border/10 rounded-2xl relative">
+            {success ? (
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/95 z-10 p-8 rounded-2xl text-center">
+                <CheckCircle2 className="w-16 h-16 text-primary mb-6 animate-in zoom-in duration-500" />
+                <h3 className="text-3xl font-black uppercase tracking-tight text-foreground mb-4">Message Sent!</h3>
+                <p className="text-muted-foreground mb-8">
+                  Thank you for reaching out. We've received your inquiry and will get back to you shortly.
+                </p>
+                <Button 
+                  onClick={() => window.location.href = '/contact'}
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  Send Another Message
+                </Button>
+              </div>
+            ) : null}
+
             <h3 className="text-2xl font-heading uppercase text-foreground mb-8">Send a Message</h3>
             <form 
               name="contact" 
               method="POST" 
-              data-netlify="true" 
               className="space-y-6"
               action="/contact?success=true"
             >
@@ -104,5 +127,13 @@ export default function ContactPage() {
       
       <Footer />
     </main>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background flex items-center justify-center font-bold uppercase tracking-widest text-primary">Loading...</div>}>
+      <ContactFormContent />
+    </Suspense>
   );
 }
