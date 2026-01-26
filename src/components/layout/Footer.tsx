@@ -60,7 +60,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-5 h-5 text-primary shrink-0" />
-                  <p className="text-foreground font-bold tracking-tight text-sm md:text-base">hello@paramvah.com</p>
+                  <p className="text-foreground font-bold tracking-tight text-sm md:text-base">paramvahconstructions24@gmail.com</p>
                 </div>
               </div>
               <div className="bg-primary/5 p-6 md:p-8 border border-primary/10 rounded-2xl">
