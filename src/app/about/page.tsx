@@ -21,21 +21,11 @@ export default function AboutPage() {
 
       {/* Founder Section */}
       <section className="py-20 bg-white/5">
-        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-           <div className="relative aspect-square md:aspect-[4/5] w-full max-w-md mx-auto overflow-hidden rounded-2xl group">
-             <Image 
-               src="/founder.jpg" 
-               alt="Samvith Nair"
-               fill
-               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-             />
-             <div className="absolute inset-0 border border-primary/50 translate-x-4 translate-y-4 -z-10 hidden md:block" />
-           </div>
-           
-           <div>
+        <div className="container mx-auto px-6 max-w-4xl">
+           <div className="text-center">
              <h3 className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Founder's Note</h3>
              <h2 className="text-5xl md:text-7xl font-black text-foreground uppercase tracking-tight mb-8">Samvith Nair</h2>
-             <div className="space-y-6 text-gray-300 font-light leading-relaxed">
+             <div className="space-y-6 text-muted-foreground font-light leading-relaxed text-xl italic max-w-2xl mx-auto">
                <p>
                  "Construction is not just about concrete and steel; it's about promises kept and dreams realized. At Paramvah, we believe in a disciplined, no-nonsense approach to building."
                </p>
@@ -44,13 +34,13 @@ export default function AboutPage() {
                </p>
              </div>
              
-             <div className="mt-10">
+             <div className="mt-12 flex justify-center">
                <Image 
                 src="/logo-new.png" 
                 alt="Signature" 
-                width={100} 
-                height={50} 
-                className="opacity-50"
+                width={120} 
+                height={60} 
+                className="opacity-30 grayscale"
                />
              </div>
            </div>

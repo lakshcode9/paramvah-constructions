@@ -10,15 +10,7 @@ export default function Footer() {
           
           {/* Founder Section */}
           <div className="lg:col-span-4">
-            <div className="relative group overflow-hidden rounded-2xl mb-8 aspect-square md:aspect-[4/5] max-w-[180px]">
-              <Image 
-                src="/founder.jpg" 
-                alt="Founder of Paramvah Constructions"  
-                fill 
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
-            </div>
+
             <h3 className="text-2xl font-black uppercase tracking-tight text-foreground mb-2">The Vision</h3>
             <p className="text-muted-foreground font-light leading-relaxed uppercase text-[10px] tracking-[0.2em] mb-1">Founder's Note</p>
             <h4 className="text-lg font-bold uppercase tracking-tight text-primary mb-4">Samvith Nair</h4>
@@ -86,7 +78,12 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 md:pt-12 border-t border-border/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-bold">
-          <p className="text-center md:text-left">© 2026 Paramvah Constructions . All Rights Reserved.</p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
+            <p>© 2026 Paramvah Constructions . All Rights Reserved.</p>
+            <p className="lowercase tracking-widest opacity-50 font-light">
+              Made by <Link href="https://www.instagram.com/lakshpujary" target="_blank" className="hover:text-primary transition-colors">Laksh</Link>
+            </p>
+          </div>
           <div className="flex gap-8">
             <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
