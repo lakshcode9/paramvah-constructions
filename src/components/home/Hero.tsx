@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Desktop Assets */}
         <div className="hidden md:block w-full h-full relative">
             <Image
-                src="/HERO_COMPUTER_STATIC.png"
+                src="/hero_realistic.png"
                 alt="Paramvah Constructions Site"
                 fill
                 className="object-cover"
@@ -35,7 +35,7 @@ export default function Hero() {
         {/* Mobile Assets */}
         <div className="block md:hidden w-full h-full relative">
              <Image
-                src="/HERO_MOBILE_STATIC.png"
+                src="/hero_realistic.png"
                 alt="Paramvah Constructions Site"
                 fill
                 className="object-cover"

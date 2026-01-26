@@ -6,17 +6,17 @@ const services = [
   {
     title: "General Construction",
     description: "Delivering complex construction projects with a focus on quality, safety, and timeliness.",
-    image: "/HERO_MOBILE_STATIC.png", 
+    image: "/services/construction.png", 
   },
   {
     title: "Interior Fit-Out",
     description: "Creating functional and inspiring interior spaces for commercial and residential clients.",
-    image: "/HERO_MOBILE_STATIC.png", 
+    image: "/projects/interiors.png", 
   },
   {
     title: "Construction Management",
     description: "Expert oversight and management ensuring project goals are met at every stage.",
-    image: "/HERO_MOBILE_STATIC.png", 
+    image: "/projects/commercial_realistic.png", 
   },
 ];
 
