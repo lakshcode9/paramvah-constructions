@@ -40,10 +40,10 @@ export default function OpeningAnimation() {
           >
             <div className="relative w-24 h-24 mb-6">
               <Image
-                src="/logo-bg-removed.png"
+                src="/logo-new.png"
                 alt="Paramvah Logo"
                 fill
-                className="object-contain dark:invert dark:brightness-0 dark:filter" 
+                className="object-contain" 
                 priority
               />
             </div>

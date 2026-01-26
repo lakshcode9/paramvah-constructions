@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Paramvah Constructions | Building with Integrity",
     description: "Premier construction excellence in Mangalore. We don't just build, we create solutions.",
-    url: "https://paramvahconstructions.com",
+    url: "https://paramvahconstruction.com",
     siteName: "Paramvah Constructions",
     locale: "en_US",
     type: "website",

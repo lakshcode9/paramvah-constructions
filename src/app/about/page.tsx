@@ -46,7 +46,7 @@ export default function AboutPage() {
              
              <div className="mt-10">
                <Image 
-                src="/logo-bg-removed.png" 
+                src="/logo-new.png" 
                 alt="Signature" 
                 width={100} 
                 height={50} 

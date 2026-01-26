@@ -35,7 +35,7 @@ export default function Preloader() {
               className="relative w-48 h-48 md:w-64 md:h-64"
             >
                <Image
-                  src="/logo-bg-removed.png"
+                  src="/logo-new.png"
                   alt="Paramvah Constructions"
                   fill
                   className="object-contain"

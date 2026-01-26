@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import { Hammer, Home, Building2, PaintBucket, MoveRight } from "lucide-react";
 
 const services = [
@@ -75,9 +76,15 @@ export default function ServicesPage() {
             </div>
             
             <div className={`order-1 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
-               <Card className="bg-white/5 border-0 aspect-video flex items-center justify-center rounded-none group-hover:bg-white/10 transition-colors">
-                 <span className="text-gray-600 uppercase tracking-widest text-sm">Service Image Placeholder</span>
-               </Card>
+               <div className="relative aspect-video overflow-hidden rounded-2xl group-hover:shadow-2xl transition-all duration-500">
+                 <Image 
+                   src={index === 0 ? "/services/construction.png" : index === 1 ? "/projects/interiors.png" : index === 2 ? "/projects/commercial.png" : "/services/pwd.png"}
+                   alt={service.title}
+                   fill
+                   className="object-cover transition-transform duration-700 group-hover:scale-110"
+                 />
+                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+               </div>
             </div>
           </div>
         ))}

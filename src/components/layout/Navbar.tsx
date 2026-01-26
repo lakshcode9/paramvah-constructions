@@ -37,12 +37,13 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-           <div className="relative w-12 h-12">
+           <div className="relative w-16 h-16">
              <Image 
-              src="/logo-bg-removed.png" 
+              src="/logo-new.png" 
               alt="Paramvah Constructions"  
               fill
-              className="object-contain dark:invert dark:filter"
+              className="object-contain"
+              priority
              />
            </div>
              <div className="flex flex-col justify-center">

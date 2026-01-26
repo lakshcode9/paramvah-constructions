@@ -10,28 +10,28 @@ const projects = [
     title: "Skyline Residency",
     category: "Residential",
     location: "Mangalore",
-    image: "/HERO_COMPUTER_STATIC.png", // Placeholder
+    image: "/projects/residential.png",
   },
   {
     id: 2,
     title: "Tech Park One",
     category: "Commercial",
     location: "Bangalore",
-    image: "/HERO_COMPUTER_STATIC.png",
+    image: "/projects/commercial.png",
   },
   {
     id: 3,
     title: "Ocean View Villa",
     category: "Interiors",
     location: "Udupi",
-    image: "/HERO_COMPUTER_STATIC.png",
+    image: "/projects/interiors.png",
   },
    {
     id: 4,
     title: "City Center Mall",
     category: "Real Estate",
     location: "Mangalore",
-    image: "/HERO_COMPUTER_STATIC.png",
+    image: "/projects/retail.png",
   },
 ];
 
